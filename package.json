@@ -1,0 +1,60 @@
+{
+  "name": "baihongjiao-website",
+  "version": "1.0.0",
+  "description": "拜鸿教官方网站 - 一个现代化、响应式的修行教派展示网站",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000 --open=/",
+    "build": "echo 'Building project...' && npm run minify",
+    "minify": "npx html-minifier --input-dir . --output-dir dist --file-ext html --collapse-whitespace --remove-comments --minify-css --minify-js",
+    "deploy": "npm run build && echo 'Project built successfully!'",
+    "lint": "npx htmlhint *.html",
+    "format": "npx prettier --write .",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "religion",
+    "wisdom",
+    "harmony",
+    "website",
+    "responsive",
+    "modern",
+    "html",
+    "css",
+    "javascript",
+    "拜鸿教",
+    "修行",
+    "智慧"
+  ],
+  "author": {
+    "name": "拜鸿教",
+    "email": "baihongjiao@wisdom.com",
+    "url": "https://baihongjiao.wisdom.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baihongjiao/baihongjiao-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/baihongjiao/baihongjiao-website/issues"
+  },
+  "homepage": "https://baihongjiao.wisdom.com",
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "htmlhint": "^1.1.4",
+    "live-server": "^1.2.2",
+    "http-server": "^14.1.1",
+    "prettier": "^3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
